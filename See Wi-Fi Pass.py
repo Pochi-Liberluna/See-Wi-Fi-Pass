@@ -46,11 +46,11 @@ for i in profiles:
         #結果リストからパスワードを見つける(finding the password from results list)
         results = [b.split(":")[1][1:-1] for b in results if "Key Content" in b]
 
-        #パスワードがある場合は、パスワードを出力(if there is password it will print the pass word)
+        #パスワードがある場合は、パスワードを出力(if there is password it will print the password)
         try:
             print("{:<30}| {:<}".format(i, results[0]))
 
-            #それ以外の場合は、パスワードの前に空白で出力(else it will print blank in front of pass word)
+            #それ以外の場合は、パスワードの前に空白で出力(else it will print blank in front of password)
         except IndexError:
                         print("{:<30}| {:<}".format(i, ""))
 
